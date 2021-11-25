@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+
 import Sidebar from "../../components/Sidebar";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/Hero";
+import Information from "../../components/Information";
 
 // import { Container } from './styles';
 
@@ -17,6 +19,7 @@ function Home() {
       <Sidebar isOpen={isOpen} toggle={handleToggleMenu}/>
       <Navbar toggle={handleToggleMenu}/>
       <Hero/>
+      <Information />
     </>
   );
 }
